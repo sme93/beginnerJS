@@ -18,12 +18,32 @@
 // heading.insertAdjacentText('afterbegin', 'SME');
 // //best way to tack on text to a node/element
 
-const pic = document.querySelector('.nice');
-pic.classList.remove('cool');
-console.log(pic.classList);
-pic.addEventListener('click', toggleRound);
+// const pic = document.querySelector('.nice');
+// pic.classList.remove('cool');
+// console.log(pic.classList);
+// pic.addEventListener('click', toggleRound);
 
-function toggleRound() {
-    pic.classList.toggle('round');
-}
+// function toggleRound() {
+//     pic.classList.toggle('round');
+// }
 
+// pic.alt = 'Cute Pup'; //setter
+// pic.width = 200;
+// console.log(pic.alt); //getter
+// console.log(pic.naturalWidth);
+
+// pic.addEventListener('load', function() {
+//   console.log(pic.naturalWidth);
+// })
+
+// console.log(pic.setAttribute('alt', 'NOT A PUP ANYMORE'));
+// console.log(pic.getAttribute('alt'));
+
+
+const custom = document.querySelector('.custom');
+console.log(custom.dataset);
+//this will give you all the data on the element
+
+custom.addEventListener('click', function() {
+  alert(`welcome ${custom.dataset.name}`)
+})
